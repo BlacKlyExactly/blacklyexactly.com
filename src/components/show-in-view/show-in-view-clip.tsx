@@ -10,6 +10,8 @@ export const ShowInViewClip = ({
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
+    if (window.innerWidth < 1024) return;
+
     animate(scope.current.children[0], {
       y: direction === 'top' ? '-100%' : '100%',
     });
