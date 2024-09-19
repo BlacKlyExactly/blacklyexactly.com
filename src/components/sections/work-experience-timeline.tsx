@@ -34,7 +34,7 @@ export const timelineData = [
             </P>
           </ShowInViewClip>
         </div>
-        <ShowInViewOpacity className="flex gap-3 relative">
+        <ShowInViewOpacity className="grid grid-cols-3 gap-3">
           <Image
             src={cierzo1}
             alt='Image of a "design app"'
