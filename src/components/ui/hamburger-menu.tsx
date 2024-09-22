@@ -65,7 +65,7 @@ export const HamburgerMenu = () => {
         animate={isOpen ? 'open' : 'closed'}
       >
         <motion.div
-          className="fixed top-0 left-0 w-fit h-screen bg-dark z-[-1] border-r border-r-white/10 origin-left flex flex-col justify-center px-16 lg:px-24 gap-8"
+          className="fixed top-0 right-0 w-fit h-screen bg-dark z-[-1] border-l border-l-white/10 origin-right flex flex-col justify-center items-end px-16 lg:px-24 gap-8"
           variants={variants.menu}
           initial={variants.menu.closed}
           animate={isOpen ? 'open' : 'closed'}
@@ -80,12 +80,13 @@ export const HamburgerMenu = () => {
             <TransitionLink
               key={display}
               href={href}
+              className="w-fit"
               onClick={() => setIsOpen(false)}
             >
-              <div className="clip">
+              <div className="clip w-fit">
                 <motion.p
                   className={cn(
-                    'text-2xl lg:text-3xl font-bold hover:text-purple transition-colors',
+                    'text-2xl lg:text-3xl font-bold hover:text-purple transition-colors text-right',
                     {
                       'bg-gradient-to-r from-purple to-white inline-block bg-clip-text text-transparent':
                         pathname === href,
