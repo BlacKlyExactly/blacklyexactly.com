@@ -13,6 +13,7 @@ import { ShowInViewOpacity } from '@/components/show-in-view/show-in-view-opacit
 import { ProjectCard } from '@/components/project-card';
 import { fetchProjects } from '@/lib/datocms';
 import { TransitionLink } from '@/components/page-transition/transition-link';
+import { TechnologiesUsed } from '@/components/technologies-used';
 
 export const dynamic = 'force-static';
 
@@ -58,7 +59,11 @@ const Home = async () => {
         </div>
         <BackgroundBeams />
       </div>
-      <Section className="mt-32 lg:mt-64">
+      <Section className="mt-24 lg:mt-64 w-full">
+        <H2>My tech stack</H2>
+        <TechnologiesUsed />
+      </Section>
+      <Section>
         <H2>Work experience</H2>
         <P className="lg:w-1/2">
           My professional background and relevant experience in the frontend

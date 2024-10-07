@@ -34,6 +34,8 @@ export const Nav = () => {
       navRef.current.style.backdropFilter = 'none';
     };
 
+    handleScroll();
+
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
