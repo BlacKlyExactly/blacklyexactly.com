@@ -15,7 +15,6 @@ import {
   SiFigma,
   SiStrapi,
   SiGatsby,
-  SiStyledcomponents,
 } from 'react-icons/si';
 import { P } from './ui/text/p';
 

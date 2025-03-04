@@ -106,25 +106,6 @@ export const HamburgerMenu = () => {
               </div>
             </TransitionLink>
           ))}
-          <a target="_blank" href="/Resume_Sebastian_Matkowski_EN.pdf">
-            <div className="clip">
-              <motion.p
-                className={cn(
-                  'text-2xl lg:text-3xl font-bold hover:text-purple transition-colors',
-                )}
-                variants={variants.item}
-                initial={variants.item.closed}
-                animate={isOpen ? 'open' : 'closed'}
-                transition={{
-                  delay: isOpen ? 0.02 + 0.04 * (selects.length + 1) : 0,
-                  ease: 'circInOut',
-                  duration: 0.6,
-                }}
-              >
-                Get my CV
-              </motion.p>
-            </div>
-          </a>
         </motion.div>
         <motion.div
           aria-label="Close hamburger menu"
