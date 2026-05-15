@@ -8,30 +8,15 @@ export const Nav = () => {
   const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    const nav = navRef.current;
+    if (!nav) return;
+
     const handleScroll = () => {
-      if (!navRef.current) return;
-
-      const isDesktop = window.innerWidth >= 1024;
-
       if (window.scrollY > 50) {
-        if (isDesktop) {
-          navRef.current.style.paddingTop = '24px';
-          navRef.current.style.paddingBottom = '24px';
-        }
-
-        navRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
-        navRef.current.style.backdropFilter = 'blur(40px)';
-
-        return;
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
       }
-
-      if (isDesktop) {
-        navRef.current.style.paddingTop = '36px';
-        navRef.current.style.paddingBottom = '36px';
-      }
-
-      navRef.current.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-      navRef.current.style.backdropFilter = 'none';
     };
 
     handleScroll();
@@ -43,8 +28,20 @@ export const Nav = () => {
 
   return (
     <nav
-      className="w-full px-7 sticky top-0 left-0 py-6 flex justify-between items-center lg:mx-auto lg:py-9 z-[1000] lg:px-24 self-start bg-black/50 backdrop-blur-2xl lg:bg-black/20 transition-all"
       ref={navRef}
+      className="
+    w-full px-7 sticky top-0 left-0 flex justify-between items-center
+    lg:mx-auto lg:px-24 self-start
+    z-[1000]
+    transition-all duration-300 ease-out
+
+    py-6 lg:py-9
+    bg-black/50 backdrop-blur-2xl lg:bg-black/20
+
+    [&.scrolled]:py-4
+    lg:[&.scrolled]:py-6
+    [&.scrolled]:bg-black/20
+  "
     >
       <TransitionLink
         href="/"

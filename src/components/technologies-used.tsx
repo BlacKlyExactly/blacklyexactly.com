@@ -45,7 +45,7 @@ export const TechnologiesUsed = () => {
         <div className="flex gap-8 animate-infinite-scroll">
           {[...technologies1, ...technologies1, ...technologies1].map(
             (tech) => (
-              <div className="flex gap-2 shrink-0 items-center">
+              <div className="flex gap-2 shrink-0 items-center" key={tech.name}>
                 <tech.icon className={`text-4xl lg:text-3xl ${tech.color}`} />
                 <P className="!mt-0 hidden lg:block">{tech.name}</P>
               </div>
@@ -57,7 +57,7 @@ export const TechnologiesUsed = () => {
         <div className="flex gap-8 animate-infinite-scroll-reverse">
           {[...technologies2, ...technologies2, ...technologies2].map(
             (tech) => (
-              <div className="flex gap-2 shrink-0 items-center">
+              <div className="flex gap-2 shrink-0 items-center" key={tech.name}>
                 <tech.icon className={`text-4xl lg:text-3xl ${tech.color}`} />
                 <P className="!mt-0 hidden lg:block">{tech.name}</P>
               </div>

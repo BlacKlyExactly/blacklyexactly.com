@@ -14,13 +14,15 @@ import { ProjectCard } from '@/components/project-card';
 import { fetchProjects } from '@/lib/datocms';
 import { TransitionLink } from '@/components/page-transition/transition-link';
 import { TechnologiesUsed } from '@/components/technologies-used';
+import Aurora from '@/components/ui/aurora';
+import { AnimatedGrid } from '@/components/ui/animated-grid-background';
 
 export const dynamic = 'force-static';
 
 export const metadata = {
   title: 'Home | Blacklyexaclty',
   description:
-    "I'm 21 years old. I'm the graduate of an IT technical school. I wish to expand my skills as a Frontend developer, and I'm working hard to achieve that",
+    "I'm 23 years old. I'm the graduate of an IT technical school. I wish to expand my skills as a Frontend developer, and I'm working hard to achieve that",
 };
 
 const Home = async () => {
@@ -29,16 +31,16 @@ const Home = async () => {
   return (
     <main>
       <div className="lg:pt-16">
-        <div className="pt-4 space-y-8 relative flex-1 z-10">
+        <div className="pt-4 space-y-8 relative flex-1 z-20">
           <Circle />
           <div>
             <Large>I am Sebastian</Large>
-            <H1 className="w-fit">Frontend Developer</H1>
+            <H1 className="w-fit">Fullstack Developer</H1>
           </div>
           <P className="lg:w-1/2">
-            I'm 21 years old. I'm the graduate of an IT technical school. I wish
-            to expand my skills as a Frontend developer, and I'm working hard to
-            achieve that
+            I am a 23-year-old Software Engineering student in Computer Science, specializing in software engineering.
+            I focus on building and maintaining modern web applications as a Frontend / Fullstack developer.
+            I develop my skills through real-world client projects and personal engineering work, with a strong interest in application architecture, performance, and clean code.
           </P>
           <div className="flex gap-4 items-center">
             <TransitionLink href="/projects">
@@ -57,7 +59,7 @@ const Home = async () => {
             </Link>
           </div>
         </div>
-        <BackgroundBeams />
+
       </div>
       <Section className="mt-24 lg:mt-64 w-full">
         <H2>My tech stack</H2>
@@ -66,7 +68,7 @@ const Home = async () => {
       <Section>
         <H2>Work experience</H2>
         <P className="lg:w-1/2">
-          My professional background and relevant experience in the frontend
+          My professional background and relevant experience in the fullstack
           developer position.
         </P>
         <WorkExperienceTimeline />

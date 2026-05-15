@@ -38,7 +38,7 @@ export const ContactSection = () => {
             >
               <Mail className="text-purple" />
               <span className="-mt-0.5 lg:-mt-1">
-                sebastian@blacklyexactly.com
+                supreme24d@gmail.com
               </span>
             </a>
           </P>

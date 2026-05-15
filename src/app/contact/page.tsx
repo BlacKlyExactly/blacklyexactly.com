@@ -8,5 +8,5 @@ export const metadata = {
     "Let's connect! Feel free to reach out for collaboration, inquiries, or just to say hello. I'm always open to new opportunities and discussions.",
 };
 
-const ContactPage = () => <BackgroundBeams />;
+const ContactPage = () => null;
 export default ContactPage;

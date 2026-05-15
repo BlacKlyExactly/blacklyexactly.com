@@ -22,151 +22,89 @@ export const timelineData = [
       <div className="space-y-16">
         <div className="space-y-4">
           <ShowInViewClip direction="top">
-            <H4 className="mt-6 lg:mt-0">Cierzo Internet</H4>
+            <H4 className="mt-6 lg:mt-0">Cierzo Comunicación</H4>
           </ShowInViewClip>
           <Circle className="hidden lg:block" />
           <ShowInViewClip direction="bottom">
             <P>
-              Developed excersise software while maintaining appropriate code
-              quality standards, Developing, analyzing, finding and fixing bugs
-              that arise during code writing, Testing software, Collaborating
-              with other developers.
+              Frontend internship focused on building UI features, fixing bugs
+              in existing applications, and maintaining code quality standards.
+              Worked on debugging, testing, and collaborating with developers
+              during feature delivery.
             </P>
           </ShowInViewClip>
         </div>
         <ShowInViewOpacity className="grid grid-cols-3 gap-3">
-          <Image
-            src={cierzo1}
-            alt='Image of a "design app"'
-            className="w-full rounded-md"
-            loading="lazy"
-            placeholder="blur"
-          />
-          <Image
-            src={cierzo5}
-            alt='Image of a "design app"'
-            className="w-full rounded-md"
-            loading="lazy"
-            placeholder="blur"
-          />
-          <Image
-            src={cierzo9}
-            alt='Image of a "design app"'
-            className="w-full rounded-md"
-            loading="lazy"
-            placeholder="blur"
-          />
+          <Image src={cierzo1} alt="Cierzo project UI" className="w-full rounded-md" loading="lazy" placeholder="blur" />
+          <Image src={cierzo5} alt="Cierzo project UI" className="w-full rounded-md" loading="lazy" placeholder="blur" />
+          <Image src={cierzo9} alt="Cierzo project UI" className="w-full rounded-md" loading="lazy" placeholder="blur" />
         </ShowInViewOpacity>
         <ShowInViewOpacity>
           <img
             src="https://skillicons.dev/icons?i=ts,angular"
-            alt="Technologies used: Typescript, Angular"
+            alt="TypeScript, Angular"
           />
         </ShowInViewOpacity>
       </div>
     ),
   },
   {
-    title: 'Mar - Aug 2022',
+    title: 'Mar 2022 – Present',
     content: (
-      <div className="space-y-16">
+      <div className="space-y-10">
         <div className="space-y-4">
           <ShowInViewClip direction="top">
             <H4 className="mt-6 lg:mt-0">Istnestudio</H4>
           </ShowInViewClip>
-          <Circle className="left-2/3 !opacity-40 hidden lg:block" />
+          <Circle className="hidden lg:block" />
           <ShowInViewClip direction="bottom">
             <P>
-              Developing software with attention to high standards of code
-              quality, investigating, identifying and eliminating errors
-              resulting from the coding process, conducting software testing,
-              using modern web technologies such as next, gatsby, strapi, dato
+              Fullstack/Frontend development focused on building and maintaining
+              web applications with emphasis on performance, scalability, and clean architecture.
+              Responsible for delivering both client-facing products and internal tools
+              across multiple projects.
             </P>
           </ShowInViewClip>
         </div>
-        <ShowInViewOpacity className="grid grid-cols-1 lg:grid-cols-2 gap-3 relative">
-          <Image
-            src={muniak}
-            alt='Image of a "design app"'
-            className="w-full rounded-md"
-            loading="lazy"
-            placeholder="blur"
-          />
-          <Image
-            src={zp}
-            alt='Image of a "design app"'
-            className="w-full rounded-md"
-            loading="lazy"
-            placeholder="blur"
-          />
-          <Image
-            src={sns}
-            alt='Image of a "design app"'
-            className="w-full rounded-md"
-            loading="lazy"
-            placeholder="blur"
-          />
+        <ShowInViewOpacity className="space-y-10">
+          <div className="space-y-4">
+            <P className="opacity-70">Early work (2022)</P>
+            <P>
+              Frontend development, UI implementation, bug fixing, testing and collaboration
+              with developers in TypeScript-based applications.
+            </P>
+          </div>
+          <div className="space-y-4">
+            <P className="opacity-70">Client & production projects</P>
+            <P>
+              Development of web applications and internal systems including dashboards,
+              admin panels and business tools using React, Next.js and Tailwind.
+            </P>
+          </div>
+          <div className="space-y-4">
+            <P className="opacity-70">Advanced frontend & interactive systems</P>
+            <P>
+              Building modern web applications using Next.js, Astro and Three.js,
+              including interactive UI components and experimental frontend experiences.
+            </P>
+          </div>
+        </ShowInViewOpacity>
+        <ShowInViewOpacity className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+          <Image src={zp} alt="Project UI" className="w-full rounded-md" />
+          <Image src={sns} alt="Project UI" className="w-full rounded-md" />
+          <Image src={muniak} alt="Project UI" className="w-full rounded-md" />
+          <Image src={muniakWorld} alt="Project UI" className="w-full rounded-md" />
+          <Image src={mazdom} alt="Project UI" className="w-full rounded-md" />
         </ShowInViewOpacity>
         <ShowInViewOpacity>
           <img
-            src="https://skillicons.dev/icons?i=ts,react,next,tailwind"
-            alt="Technologies used: Typescript, React, Next, Tailwind"
-            loading="lazy"
+            src="https://skillicons.dev/icons?i=ts,react,next,astro,threejs,tailwind"
+            alt="Tech stack"
           />
         </ShowInViewOpacity>
       </div>
     ),
-  },
-  {
-    title: 'Mar - Oct 2023',
-    content: (
-      <div className="space-y-16">
-        <div className="space-y-4">
-          <ShowInViewClip direction="top">
-            <H4 className="mt-6 lg:mt-0">Istnestudio</H4>
-          </ShowInViewClip>
-          <ShowInViewClip direction="bottom">
-            <P>
-              Developing software with attention to high standards of code
-              quality, investigating, identifying and eliminating errors
-              resulting from the coding process, conducting software testing,
-              using modern web technologies such as next, astro, threejs, dato
-            </P>
-          </ShowInViewClip>
-        </div>
-        <div className="relative">
-          <Circle className="!opacity-50 hidden lg:block" />
-          <ShowInViewOpacity className="grid grid-cols-1 lg:grid-cols-2 gap-3 ">
-            <Image
-              src={mazdom}
-              alt='Image of a "design app"'
-              width={1920}
-              height={1080}
-              className="w-full rounded-md"
-              loading="lazy"
-              placeholder="blur"
-            />
-            <Image
-              src={muniakWorld}
-              alt='Image of a "design app"'
-              width={1920}
-              height={1080}
-              className="w-full rounded-md"
-              loading="lazy"
-              placeholder="blur"
-            />
-          </ShowInViewOpacity>
-        </div>
-        <ShowInViewOpacity>
-          <img
-            src="https://skillicons.dev/icons?i=ts,react,next,astro,threejs"
-            alt="Technologies used: Typescript, React, Next, Astro, Threejs"
-            loading="lazy"
-          />
-        </ShowInViewOpacity>
-      </div>
-    ),
-  },
+  }
 ];
 
 export const WorkExperienceTimeline = () => <Timeline data={timelineData} />;

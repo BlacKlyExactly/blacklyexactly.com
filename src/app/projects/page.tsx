@@ -17,7 +17,6 @@ const ProjectsPage = async () => {
 
   return (
     <main className="pt-16">
-      <BackgroundBeams className="z-[-1]" />
       <H1 className="py-1">Projects</H1>
       <P className="lg:w-1/2">
         Explore a curated selection of my latest frontend development projects,

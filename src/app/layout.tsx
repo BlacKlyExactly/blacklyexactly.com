@@ -7,6 +7,7 @@ import { Footer } from '@/components/sections/footer';
 import { ContactSection } from '@/components/sections/contact-section';
 import { Toaster } from '@/components/ui/toaster';
 import { PageTransition } from '@/components/page-transition/page-transition';
+import { AnimatedGrid } from '@/components/ui/animated-grid-background';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,7 +37,8 @@ export default function RootLayout({
         <header className="sticky top-0 z-50">
           <Nav />
         </header>
-        <div className="max-w-[1200px] mx-auto flex flex-col px-7 lg:px-14 flex-1 justify-center">
+        <AnimatedGrid />
+        <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col px-7 lg:px-14 flex-1 justify-center">
           {children}
           <ContactSection />
         </div>
